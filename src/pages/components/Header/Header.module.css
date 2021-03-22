@@ -1,0 +1,40 @@
+.header {
+    background: #3f1e6b;
+}
+
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 4px;
+    height: 115px;
+    width: 100%;
+}
+
+.avatarImg {
+    height: 60px;
+    padding-right: 14px;
+}
+
+.nameUser {
+    font-size: 26px;
+}
+
+.leftSide {
+    display: flex;
+    align-items: flex-end;
+}
+
+.rightSide {
+    display: flex;
+    align-self: center;
+}
+
+.menuIcon {
+    cursor: pointer;
+    margin-right: 36px;
+}
+
+.menuIcon:hover {
+    opacity: 0.6;
+}
