@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(238, 238, 238);
+    background: black;
+    padding: 12px;
+}
+
+.infoContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-weight: 500;
+}
+
+.subtitle {
+    color: rgb(193, 193, 193);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.graph {
+    height: 40px;
+}
+
+.metricsContainer {
+    width: 70px;
+    text-align: right;
+    margin-left: 20px;
+}
+
+.delta {
+    border-radius: 4px;
+    padding: 0 4px;
+    font-size: 14px;
+}
+
+.deltaRed {
+    composes: delta;
+    background: rgb(252, 58, 48);
+}
+
+.deltaGreen {
+    composes: delta;
+    background: rgb(51, 196, 91);
+}
+
+.deltaWhite {
+    composes: delta;
+    background: white;
+    color: black;
+    text-align: center;
+}
