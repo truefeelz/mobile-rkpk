@@ -1,1 +1,1 @@
-export * from './KpiPage/KpiPage';
+export * from './MainPage';
