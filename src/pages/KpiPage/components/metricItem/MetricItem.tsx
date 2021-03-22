@@ -1,4 +1,4 @@
-import React, {ReactNode} from "react";
+import React from "react";
 import classes from "./MetricItem.module.css";
 
 interface IProps {

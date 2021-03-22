@@ -1,9 +1,8 @@
 .container {
     display: flex;
     justify-content: space-between;
-    color: rgb(238, 238, 238);
-    background: black;
     padding: 12px;
+    border-bottom: 1px solid #1e1e1e;
 }
 
 .infoContainer {
@@ -12,11 +11,11 @@
 }
 
 .title {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .subtitle {
-    color: rgb(193, 193, 193);
+    color: #808080;
     font-size: 14px;
     font-weight: 500;
 }
