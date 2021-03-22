@@ -1,0 +1,67 @@
+.container {
+    border-radius: 24px;
+    padding: 12px;
+}
+
+.header {
+    padding: 8px;
+    border-bottom: 1px grey solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerTitle {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.headerButtons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.headerMinimize {
+    padding: 4px 12px 4px 12px;
+    border-right: 2px lightgrey solid;
+    cursor: pointer;
+}
+
+.headerOptions {
+    padding: 4px 12px 4px 32px;
+}
+
+.content {
+    max-height: 240px;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+
+.contentExpanded {
+    composes: content;
+    max-height: 700px;
+}
+
+.contentAndFooter {
+    max-height: 800px;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+
+.contentAndFooterMinimized {
+    composes: contentAndFooter;
+    max-height: 0px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footerButton {
+    border-radius: 16px;
+    background: #3f1e6b;
+    padding: 12px 48px;
+    cursor: pointer;
+}
