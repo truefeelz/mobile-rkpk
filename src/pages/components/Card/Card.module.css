@@ -1,50 +1,56 @@
 .container {
-    border-radius: 24px;
-    padding: 12px;
+    border-radius: 10px;
+    padding: 4px 12px 8px 12px;
     margin-top: 12px;
     background: black;
     border: 2px solid #ffffff61;
 }
 
 .header {
-    padding: 8px;
+    padding: 4px;
     border-bottom: 1px grey solid;
     display: flex;
     justify-content: space-between;
 }
 
 .headerTitle {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
 }
 
 .headerButtons {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
+    color: grey;
 }
 
 .headerMinimize {
     padding: 4px 12px 4px 12px;
-    border-right: 2px lightgrey solid;
+    border-right: 1px grey solid;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .optionsIcon {
     cursor: pointer;
     font-size: 24px;
-    vertical-align: sub;
+    vertical-align: middle;
 }
 
 .headerOptions {
-    padding: 4px 12px 4px 32px;
+    padding: 4px 0 4px 16px;
 }
 
 .content {
-    max-height: 240px;
+    max-height: 232px;
     overflow: hidden;
     transition: max-height 0.2s;
+    padding: 8px 0px 8px;
 }
 
 .contentExpanded {
@@ -66,6 +72,7 @@
 .footer {
     display: flex;
     justify-content: center;
+    margin-top: 8px;
 }
 
 .footerButton {

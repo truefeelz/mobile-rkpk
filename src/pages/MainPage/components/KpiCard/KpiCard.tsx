@@ -6,13 +6,17 @@ import {Card} from "../../../components";
 
 export const KpiCard: React.FC = () => {
     return (
-        <Card title="КПЭ">
+        <Card title={
+            <>
+                КПЭ
+                <span className={classes.title}>
+                  За квартал
+                </span>
+            </>
+        }>
             <div className={classes.page}>
               <div className={classes.pageHeader}>
                   <div className={classes.container}>
-                      <span className={classes.title}>
-                          КПЭ
-                      </span>
                       <span className={classes.subTitle}>
                           1 – 5 Февраля
                       </span>
