@@ -1,5 +1,5 @@
 import React from "react";
-import { KpiCard } from "./components";
+import {EventCard, KpiCard} from "./components";
 import { Header } from "../components";
 import classes from "./MainPage.module.css";
 
@@ -9,6 +9,7 @@ export const MainPage: React.FC = () => {
             <Header />
             <div className={classes.contentWrapper}>
                 <KpiCard />
+                <EventCard />
             </div>
         </div>
     );
