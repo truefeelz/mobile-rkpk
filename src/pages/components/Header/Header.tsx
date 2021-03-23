@@ -3,6 +3,18 @@ import { InfoBlock } from "./components";
 import classes from './Header.module.css';
 import avatarImg from './images/avatar.png';
 import menuImg from './images/menu.svg';
+import {Dropdown} from "../Dropdown";
+
+const menuItems = [
+    {
+        title: 'Профиль',
+        onClick: () => void 0
+    },
+    {
+        title: 'Настройки',
+        onClick: () => void 0
+    },
+];
 
 export const Header: React.FC = () => {
     return (
@@ -14,8 +26,11 @@ export const Header: React.FC = () => {
                         <span className={classes.nameUser}>Владимир</span>
                     </div>
                     <div className={classes.rightSide}>
-                       <img src={menuImg} className={classes.menuImg} />
+                        <Dropdown items={menuItems}>
+                            <img src={menuImg} className={classes.menuImg} />
+                        </Dropdown>
                     </div>
+
                 </div>
                 <InfoBlock />
             </div>

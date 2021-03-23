@@ -2,16 +2,33 @@ import React from 'react';
 import classes from './KpiCard.module.css';
 import { MetricItem } from "./components/metricItem";
 import { metrics } from "./metrics";
-import {Card} from "../../../components";
+import {Card, Dropdown} from "../../../components";
+
+const menuItems = [
+    {
+        title: 'За неделю',
+        onClick: () => void 0
+    },
+    {
+        title: 'За месяц',
+        onClick: () => void 0
+    },
+    {
+        title: 'За квартал',
+        onClick: () => void 0
+    },
+];
 
 export const KpiCard: React.FC = () => {
     return (
         <Card title={
             <>
                 КПЭ
-                <span className={classes.title}>
-                  За квартал
-                </span>
+                <Dropdown items={menuItems}>
+                    <span className={classes.title}>
+                      За квартал
+                    </span>
+                </Dropdown>
             </>
         }>
             <div className={classes.page}>

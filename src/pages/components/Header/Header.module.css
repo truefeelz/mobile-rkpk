@@ -1,6 +1,7 @@
 .header {
     background: #3f1e6b;
     border-radius: 0 0 10px 10px;
+    z-index: 10;
 }
 
 .headerWrapper {
