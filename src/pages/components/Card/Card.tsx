@@ -1,11 +1,10 @@
 import React, {ReactNode, useState} from "react";
 import classes from "./Card.module.css";
 import {Dropdown} from "../Dropdown";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faCog} from "@fortawesome/free-solid-svg-icons";
+import faCog from "./images/Cog.svg";
 
 interface IProps {
-    title: string;
+    title: ReactNode;
     children: ReactNode;
 }
 
@@ -39,7 +38,7 @@ export const Card: React.FC<IProps> = (props) => {
                     </div>
                     <div className={classes.headerOptions}>
                         <Dropdown items={menuItems}>
-                            <FontAwesomeIcon icon={faCog} className={classes.optionsIcon} size="1x"/>
+                            <img src={faCog} className={classes.optionsIcon} />
                         </Dropdown>
                     </div>
                 </div>
