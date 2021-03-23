@@ -45,7 +45,7 @@ export const Card: React.FC<IProps> = (props) => {
             </div>
             <div className={minimize ? classes.contentAndFooterMinimized : classes.contentAndFooter}>
                 <div className={expend ? classes.contentExpanded : classes.content}>{children}</div>
-                <div className={classes.footer}>
+                <div className={expend ? classes.footer : classes.footerCollapsed}>
                     <div
                         className={classes.footerButton}
                         onClick={() => setExpend(!expend)}
