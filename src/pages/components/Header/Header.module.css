@@ -13,7 +13,7 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 0 4px;
-    height: 115px;
+    height: 64px;
     width: 100%;
 }
 
@@ -36,11 +36,11 @@
     align-self: center;
 }
 
-.menuIcon {
+.menuImg {
     cursor: pointer;
-    margin-right: 36px;
+    margin-right: 10px;
 }
 
-.menuIcon:hover {
+.menuImg:hover {
     opacity: 0.6;
 }
