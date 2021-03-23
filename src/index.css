@@ -17,3 +17,7 @@ body {
   position: relative;
   box-sizing: border-box;
 }
+
+#root {
+  height: 100%;
+}
