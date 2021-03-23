@@ -1,12 +1,15 @@
 import React from "react";
 import { KpiCard } from "./components";
 import { Header } from "../components";
+import classes from "./MainPage.module.css";
 
 export const MainPage: React.FC = () => {
     return (
-        <>
+        <div className={classes.pageWrapper}>
             <Header />
-            <KpiCard />
-        </>
+            <div className={classes.contentWrapper}>
+                <KpiCard />
+            </div>
+        </div>
     );
 };
