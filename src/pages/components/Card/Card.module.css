@@ -1,6 +1,7 @@
 .container {
     border-radius: 24px;
     padding: 12px;
+    margin-top: 12px;
     background: black;
     border: 2px solid #ffffff61;
 }

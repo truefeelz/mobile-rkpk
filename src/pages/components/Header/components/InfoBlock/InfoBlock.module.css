@@ -1,0 +1,23 @@
+.infoBlock {
+    background: linear-gradient(108.56deg, #D2DFFC 5.32%, #F9DDDD 90.9%), #FFFFFF;
+    border-radius: 10px
+}
+
+.infoBlockWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 12px;
+    color: #000000;
+    font-size: 12px;
+}
+
+.rightSide {
+    display: flex;
+    align-items: center;
+    padding-right: 4px;
+}
+
+.imgCup {
+    margin-right: 16px;
+}
