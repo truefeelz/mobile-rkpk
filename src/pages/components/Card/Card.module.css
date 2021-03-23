@@ -43,7 +43,8 @@
 }
 
 .headerOptions {
-    padding: 4px 0 4px 16px;
+    padding: 0 0 0 16px;
+    display: flex;
 }
 
 .content {

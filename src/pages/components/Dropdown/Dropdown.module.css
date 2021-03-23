@@ -3,16 +3,19 @@
     display: inline-block;
 }
 
+.filterWrapper {
+    display: flex;
+}
+
 .dropdownContent {
     position: absolute;
     background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 0px 8px 8px rgba(63,30,107,0.6);
-    border: 1px solid #d3b2ff;
-    z-index: 1;
+    min-width: 140px;
+    box-shadow: 0px 0px 8px 8px rgba(63,30,107,0.2);
     border-radius: 8px;
     right: 0px;
     margin-top: 12px;
+    z-index: 2;
 }
 
 .item {
@@ -20,4 +23,24 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.closeTrigger {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.0);
+    transition: background 0.2s;
+    z-index: -1;
+    position: unset;
+}
+
+.closeTriggerActive {
+    composes: closeTrigger;
+    background: rgba(0,0,0,0.2);
+    z-index: 1;
+    position: fixed;
 }

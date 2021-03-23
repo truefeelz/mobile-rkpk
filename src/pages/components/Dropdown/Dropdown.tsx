@@ -11,14 +11,22 @@ interface IProps {
     items: IItem[];
 }
 
-export const Dropdown: React.FC<IProps> = ({children, items}) => {
+export const Dropdown: React.FC<IProps> = (props) => {
+    const {children, items} = props;
+
     const [visible, setVisible] = useState(false);
+
+    const toggleVisible = () => setVisible(!visible);
 
     return (
         <div className={classes.dropdown}>
-            <div onClick={() => setVisible(!visible)}>
+            <div className={classes.filterWrapper} onClick={toggleVisible}>
                 {children}
             </div>
+            <div
+                className={visible ? classes.closeTriggerActive : classes.closeTrigger}
+                onClick={() => visible && toggleVisible()}
+            />
             {visible &&
                 <div className={classes.dropdownContent}>
                     {items.map(({title, onClick}) =>
