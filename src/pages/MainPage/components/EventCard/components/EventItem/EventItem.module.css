@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding: 12px 0 12px;
+    border-bottom: 1px solid #1e1e1e;
+}
+
+.infoContainer {
+    padding-left: 18px;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dayBlock {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dayNumbTitle {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.container:nth-child(2n) .dayBlock {
+   background: #aa78ad;
+}
+
+.container:nth-child(2n+1) .dayBlock {
+    background: #7dbdd9;
+}
