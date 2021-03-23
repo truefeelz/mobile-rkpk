@@ -1,5 +1,8 @@
 import React, {ReactNode, useState} from "react";
 import classes from "./Card.module.css";
+import {Dropdown} from "../Dropdown";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faCog} from "@fortawesome/free-solid-svg-icons";
 
 interface IProps {
     title: string;
@@ -11,6 +14,17 @@ export const Card: React.FC<IProps> = (props) => {
 
     const [expend, setExpend] = useState(false);
     const [minimize, setMinimize] = useState(false);
+    const [hidden, setHidden] = useState(false);
+
+    const menuItems = [
+        {
+            title: 'Скрыть',
+            onClick: () => { setHidden(true); }
+        }
+    ];
+
+    if (hidden)
+        return (<div />);
 
     return (
         <div className={classes.container}>
@@ -23,7 +37,11 @@ export const Card: React.FC<IProps> = (props) => {
                     >
                         {minimize ? 'Развернуть' : 'Свернуть'}
                     </div>
-                    <div className={classes.headerOptions}>...</div>
+                    <div className={classes.headerOptions}>
+                        <Dropdown items={menuItems}>
+                            <FontAwesomeIcon icon={faCog} className={classes.optionsIcon} size="1x"/>
+                        </Dropdown>
+                    </div>
                 </div>
             </div>
             <div className={minimize ? classes.contentAndFooterMinimized : classes.contentAndFooter}>
