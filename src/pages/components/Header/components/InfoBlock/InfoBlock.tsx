@@ -8,7 +8,7 @@ export const InfoBlock: React.FC = () => {
             <div className={classes.infoBlockWrapper}>
                 <div className={classes.rightSide}>
                     <img src={cupImage} className={classes.imgCup}/>
-                    <span className={classes.title}>Владимир, ваша КПК на <b>30 месте</b>!
+                    <span className={classes.title}>Арина, ваша КПК на <b>30 месте</b>!
                         Прогноз на конец квартала – <b>24 место</b>. Так держать!
                     </span>
                 </div>

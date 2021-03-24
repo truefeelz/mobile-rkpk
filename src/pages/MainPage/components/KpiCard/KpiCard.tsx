@@ -3,6 +3,7 @@ import classes from './KpiCard.module.css';
 import { MetricItem } from "./components/metricItem";
 import { metrics } from "./metrics";
 import {Card, Dropdown} from "../../../components";
+import classNames from "classnames";
 
 const menuItems = [
     {
@@ -25,7 +26,7 @@ export const KpiCard: React.FC = () => {
             <>
                 КПЭ
                 <Dropdown items={menuItems}>
-                    <span className={classes.title}>
+                    <span className={classNames(classes.title,classes.dropdown)}>
                       За квартал
                     </span>
                 </Dropdown>
