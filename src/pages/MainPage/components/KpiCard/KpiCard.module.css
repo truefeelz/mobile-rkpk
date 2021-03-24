@@ -17,3 +17,11 @@
     color: #808080;
     font-size: 18px;
 }
+
+.dropdown {
+    cursor: pointer;
+}
+
+.dropdown:hover {
+    opacity: 0.6;
+}

@@ -21,3 +21,11 @@
 .imgCup {
     margin-right: 16px;
 }
+
+.subTitle {
+    cursor: pointer;
+}
+
+.subTitle:hover {
+    opacity: 0.8;
+}

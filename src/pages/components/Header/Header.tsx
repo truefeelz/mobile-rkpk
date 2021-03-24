@@ -23,7 +23,7 @@ export const Header: React.FC = () => {
                 <div className={classes.content}>
                     <div className={classes.leftSide}>
                         <img src={avatarImg} className={classes.avatarImg} />
-                        <span className={classes.nameUser}>Владимир</span>
+                        <span className={classes.nameUser}>Арина</span>
                     </div>
                     <div className={classes.rightSide}>
                         <Dropdown items={menuItems}>
